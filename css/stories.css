@@ -1,0 +1,26 @@
+.arribaH1 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+}
+.fecha {
+    margin: 0%;
+}
+@media all and (min-width:650px) { 
+    .primeraSection {
+        position: relative;
+    }
+    .divTitulo {
+        position: absolute;
+        z-index: 5;
+        background-color: transparent;
+        top: 100px;
+
+    }
+}
+@media all and (min-width:1000px) {
+    .otraDesktop {
+        height: 50%;
+    }
+}

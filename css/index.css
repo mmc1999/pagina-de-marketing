@@ -1,0 +1,483 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body { 
+    font-family: 'DM Sans', sans-serif;
+    padding: 0%;
+    margin: 0%;
+}
+/*------------------------------------- diseño general ------------------------------------------------*/
+h1, h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    margin: 0%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display:block;
+}
+/*esto es para el final de features y pricing*/
+.tituloInvitacion {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33333px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.ultimoSection {
+    position: relative;
+}
+.divultimoSection {
+    position: absolute;
+    z-index: 2;
+    top: 50px;
+    padding: 20px;
+}
+/*listo features y pricing*/
+/* ------------------------------------------- HEADER ------------------------------------------------*/
+header {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header > * {
+    padding: 20px;
+}
+.nav {
+    position: absolute;
+    top: 55px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0px 20px;
+    transform: translateY(-260px);
+    transition: transform 500ms ease-in-out;
+}
+.active {
+    transform: translateY(0px);
+    transition: transform 500ms ease-in-out;
+}
+.nav > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.enlaceNav {
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+}
+.enlaceNavDistinto {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.segundoDivNav {
+    margin: 10px 0px;
+    border-top: thin solid #979797;
+    
+}
+
+.imagenHamburguesa {
+    /**/
+}
+.imagenCierre {
+    display: none;
+}
+/*-------------------------------PRIMERA SECTION -------------------------------------*/
+
+.imagenPrimeraDesktop, .imagenPrimeraTablet, .imagenPrimeraMobile, .otraMobile, .otraDesktop, .otraTablet {
+    width: 100%;
+}
+.imagenPrimeraDesktop, .imagenPrimeraTablet, .otraDesktop, .otraTablet {
+    display: none;
+    position: relative;
+}
+.divTitulo {
+    padding: 50px 20px;
+    position: relative;
+}
+.divTituloh1 {
+    background-color: black;
+}
+.h1 {
+    color: white;
+}
+.parrafoH1 {
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    font-weight: 400;
+}
+.divFlecha {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.parrafoFlecha {
+    color: white;
+}
+.flecha {
+    filter: invert(1);
+}
+
+.lineaGradient {
+    position: absolute;
+    width: 128px;
+    height: 6px;
+    left: 20px;
+    top: 0px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+}
+/*------------------------------SEGUNDO SECTION-------------------------------*/
+.parrafoFlecha1 {
+    text-transform: uppercase;
+}
+.parrafoH2 {
+    font-size: 15px;
+    line-height: 25px;
+
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    font-weight: 400;
+}
+
+/*-------------------------------TERCER SECTION -------------------------------------*/
+.divCompleto {
+    position: relative;
+}
+.divCompleto2 {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 2;
+}
+.divCompleto2 > *{
+    color: white;
+}
+.divFlecha1 {
+    border-top: thin solid rgba(255, 255, 255, 0.568);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+.nombreCuadro {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    margin: 0%;
+}
+.nombreArtista {
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 400;
+    margin: 0%;
+    margin-bottom: 10px;
+}
+
+/*-------------------------------Cuarto SECTION -------------------------------------*/
+.cuartoSection {
+    padding: 40px 20px;
+}
+.divCarac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.parrafoCarac {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    margin-top: 0%;
+}
+
+/*------------------------------- footer -------------------------------------*/
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 30px 40px;
+}
+/*footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}*/
+footer section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer section > * {
+    margin: 20px 0px;
+}
+.logoFooter {
+    filter: invert(1);
+}
+.enlaceFooter {
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    margin: 5px 0px;
+}
+.divRedes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.iconosRedesFooter {
+    filter:brightness(0) sepia(1) hue-rotate(140deg) invert(1);
+}
+.divNavFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divFlecha2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+.getFooter, .copy {
+    color: white;
+    font-size: 12px;
+}
+.copy {
+    opacity: 0.4;
+}
+@media all and (min-width:365px) {
+    .sectionVariasImagenes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .divFlecha1 {
+        gap: 20px;
+    }
+    .nombreCuadro {
+        font-size: 13px;
+    }
+    .nombreArtista {
+        font-size: 9px;
+    }
+    .divCompleto2{ 
+        bottom: -4px;
+    }
+}
+@media all and (min-width:650px) {
+    /*-------------------------- HEADER -------------------------------------*/
+    header {  
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav {
+        position: relative;
+        top: 0px;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        padding: 0px 20px;
+        transform: translateY(0px);
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav > div {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .enlaceNav {
+        margin: 10px 10px;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .enlaceNavDistinto {
+        padding: 10px;
+    }
+    .segundoDivNav {
+        margin: 10px 0px;
+        border:none;
+    }
+    .divBotonCierre {
+        display: none;
+    }
+    /*fin del header*/
+    .primeraSection {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-auto-flow: row-reverse;
+    }
+    .divImagenes {
+        order: 2;
+    }
+    .divTitulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .divTitulo > * {
+        width: 400px;
+    }
+    .lineaGradient {
+        width: 6px;
+        height: 240px;
+        left: 0px;
+        top: 22%;
+    }
+    .otraMobile, .otraDesktop {
+        display: none;
+    }
+    .otraTablet {
+        display: block;
+    }
+    .segundaSection {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        grid-auto-flow: row-reverse;
+    }
+    .divTitulo2 {
+        padding: 50px;
+    }
+    .imagenCarac {
+        margin: 50px 0px;
+        height: 60px;
+    }
+    .parrafoCarac {
+        width: 300px;
+    }
+    /*------------------------------------ FOOTER -------------------------------------*/
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer section {
+        align-items: flex-start;
+    }
+    .divRedes {
+        order: 2;
+        justify-content: initial;
+        margin-top: 30px;
+    }
+    .divNavFooter {
+        order: 1;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    .segundoSectionFooter {
+        display: flex;
+        justify-content: space-between;
+    }
+    .divCopy {
+        justify-content: flex-end;
+    }
+}
+@media all and (min-width:1000px) {
+    .otraMobile, .otraTablet {
+        display: none;
+    }
+    .otraDesktop {
+        display: block;
+    }
+    /*------------------------------------------HEADER-----------------------------*/
+    header {
+        justify-content: space-between;
+    }
+    .logoHeader {
+        margin-left: 30px;
+    }
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+        background-color: transparent;
+    }
+    .enlaceNav:hover {
+        opacity: 0.3;
+        transition: opacity 500ms ease;
+    }
+    .enlaceNavDistinto:hover {
+        opacity: 1;
+        background-color: #DFDFDF;
+        color: black;
+        transition: all 500ms ease;
+    }
+    /*------------------------------------------ fin HEADER-----------------------------*/
+    .sectionVariasImagenes {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .cuartoSection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+    .parrafoCarac {
+        width: 300px;
+    }
+    .segundaSection {
+        grid-template-columns: 55% 45%;
+    }
+    .primeraSection {
+        grid-template-columns: 45% 55%;
+    }
+    /*-------------------------------------- FOOTER -----------------------------------*/
+    .primerSection {
+        width: 500px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 
+        "left1 derecha"
+        "left2 derecha";
+    }
+    .divNavFooter {
+        grid-area: derecha;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .enlaceFooter:hover {
+        opacity: 0.3;
+        transition: opacity 200ms ease;
+    }
+    .iconosRedesFooter:hover {
+        filter:inherit;
+        transition: filter 500ms ease;
+    }
+}
