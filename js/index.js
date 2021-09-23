@@ -1,9 +1,10 @@
 const $sectionTable = document.querySelector(".sectionTable"),
     $table = document.querySelector(".table"),
-    $mensual = document.querySelectorAll(".mensual"),
-    $anual = document.querySelectorAll(".anual"),
-    $radio1 = document.querySelector(".radio1"),
-    $radio2 = document.querySelector(".radio2");
+    $monthly = document.querySelector(".monthly"),
+    $yearly = document.querySelector(".yearly"),
+    $form = document.querySelector(".form"),
+    $precioMensual = document.querySelectorAll(".mensual"),
+    $precioAnual = document.querySelectorAll(".anual");
 
 let medidas = window.matchMedia("(min-width: 650px)"),
     $tabla650 = "";
@@ -86,28 +87,27 @@ document.addEventListener("click", e => {
         document.querySelector(".imagenHamburguesa").style.display = "block"
         document.querySelector(".imagenCierre").style.display = "none"
     }
-    if(document.querySelector('input[name="radio"]:checked').value == 1) {
-        agregarSacarClases($mensual, $anual)
-
+    if(e.target.matches(".form")) {
+        $monthly.classList.toggle("elegir");
+        $yearly.classList.toggle("elegir");
+        $form.classList.toggle("cambiar")
+        agregarClase($precioAnual)
+        agregarClase($precioMensual)
     } 
-    if(document.querySelector('input[name="radio"]:checked').value == 2){
-        agregarSacarClases($anual, $mensual)
-    }
-    
 })
 
 document.addEventListener("scroll", () => {
     if(window.scrollY > 40) {
+        
         document.querySelector(".nav").classList.remove("active")
         document.querySelector(".imagenHamburguesa").style.display = "block"
         document.querySelector(".imagenCierre").style.display = "none"
     }
 })
 
-const agregarSacarClases = (array, sacarArray) => {
-    for(let i = 0; i < array.length;i++) {
-        array[i].classList.add("activar")
-        sacarArray[i].classList.remove("activar")
-        console.log(array[i])
+const agregarClase = (array) => {
+    for (let i = 0; i < array.length; i++) {
+        array[i].classList.toggle("activar")
     }
 }
+
